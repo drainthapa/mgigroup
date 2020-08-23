@@ -16,3 +16,23 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('front.front');
 });
+
+Route::get('/front/about-us',function(){
+	return view('front.about-us');
+});
+
+Route::get('/front/company-details',function(){
+	return view('front.company-details');
+});
+
+Route::get('/front/contact',function(){
+	return view('front.contact');
+});
+
+Route::get('/front/news',function(){
+	return view('front.news');
+});
+
+Route::get('/front/single-news',function(){
+	return view('front.single-news');
+});

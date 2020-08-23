@@ -35,7 +35,7 @@
                 <nav class="classy-navbar justify-content-between" id="uzaNav">
 
                     <!-- Logo -->
-                    <a class="nav-brand" href="index.html"><img src="{{asset('images/frontend_images/core-img/mgilogoo.png')}}" alt=""></a>
+                    <a class="nav-brand" href="{{url('/')}}"><img src="{{asset('images/frontend_images/core-img/mgilogoo.png')}}" alt=""></a>
 
                     <!-- Navbar Toggler -->
                     <div class="classy-navbar-toggler">
@@ -52,48 +52,37 @@
                         <!-- Nav Start -->
                         <div class="classynav">
                             <ul id="nav">
-                                <li class="current-item"><a href="./index.html">Home</a></li>
-                                <li><a href="#">Pages</a>
+                                <li class="current-item"><a href="{{url('/')}}">HOME</a></li>
+                                <li><a href="#">MGI</a>
                                     <ul class="dropdown">
-                                        <li><a href="./index.html">- Home</a></li>
-                                        <li><a href="./about.html">- About</a></li>
-                                        <li><a href="./services.html">- Services</a></li>
-                                        <li><a href="./portfolio.html">- Portfolio</a></li>
-                                        <li><a href="./portfolio-single.html">- Single Portfolio</a></li>
-                                        <li><a href="./blog.html">- Blog</a></li>
-                                        <li><a href="./single-blog.html">- Blog Details</a></li>
-                                        <li><a href="./contact.html">- Contact</a></li>
-                                        <li><a href="#">- Dropdown</a>
-                                            <ul class="dropdown">
-                                                <li><a href="#">- Dropdown Item</a></li>
-                                                <li><a href="#">- Dropdown Item</a>
-                                                    <ul class="dropdown">
-                                                        <li><a href="#">- Even Dropdown</a></li>
-                                                        <li><a href="#">- Even Dropdown</a></li>
-                                                        <li><a href="#">- Even Dropdown</a></li>
-                                                        <li><a href="#">- Even Dropdown</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="#">- Dropdown Item</a></li>
-                                                <li><a href="#">- Dropdown Item</a></li>
-                                            </ul>
-                                        </li>
+                                        <li><a href="{{url('/front/about-us')}}">- About MGI</a></li>
+                                        <li><a href="#">- Leadership</a></li>
+                                        <li><a href="#">- Promoters</a></li>
+                                        <li><a href="#">- Milestones</a></li>
+                                        <li><a href="#">- Awards</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="./portfolio.html">Portfolio</a></li>
-                                <li><a href="./about.html">About</a></li>
-                                <li><a href="#">Blog</a>
+                                <li><a href="#">SBUs</a>
                                     <ul class="dropdown">
-                                        <li><a href="./blog.html">- Blog</a></li>
-                                        <li><a href="./single-blog.html">- Blog Details</a></li>
+                                        <li><a href="#">- New Manakamana Eta</a></li>
+                                        <li><a href="#">- New Manakamana Miller</a></li>
+                                        <li><a href="#">- Manakamana Eta Udyog</a></li>
+                                        <li><a href="#">- Manakamana Eta Udyog</a></li>
+                                        <li><a href="#">- Manakamana Eta Udyog</a></li>
+                                        <li><a href="#">- Manakamana Eta Udyog</a></li>
+                                        <li><a href="#">- Manakamana Eta Udyog</a></li>
+                                        <li><a href="#">- Roadyz Automart Pvt. Ltd.</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="./contact.html">Contact</a></li>
+                                <li><a href="#">APPROVALS</a></li>
+                                <li><a href="{{url('front/news')}}">NEWS</a></li>
+                                <li><a href="#">CAREERS</a></li>
+                                <li><a href="{{url('front/contact')}}">CONTACT</a></li>
                             </ul>
 
                             <!-- Get A Quote -->
                             <div class="get-a-quote ml-4 mr-3">
-                                <a href="#" class="btn uza-btn">Get A Quote</a>
+                                <a href="#" class="btn uza-btn">Get an appointment</a>
                             </div>
 
                             <!-- Login / Register -->

@@ -18,7 +18,7 @@
                             <!-- Welcome Text -->
                             <div class="col-12 col-md-6">
                                 <div class="welcome-text">
-                                    <h2 data-animation="fadeInUp" data-delay="100ms">Uza makes your <br> biz <span>greater</span></h2>
+                                    <h2 data-animation="fadeInUp" data-delay="100ms">MGI Group makes your <br> life <span>greater</span></h2>
                                     <h5 data-animation="fadeInUp" data-delay="400ms">We love to create "cool" things on Digital Platforms</h5>
                                     <a href="#" class="btn uza-btn btn-2" data-animation="fadeInUp" data-delay="700ms">Start Exploring</a>
                                 </div>
@@ -48,7 +48,7 @@
                             <!-- Welcome Text -->
                             <div class="col-12 col-md-6">
                                 <div class="welcome-text">
-                                    <h2 data-animation="fadeInUp" data-delay="100ms">Uza makes your <br> biz <span>greater</span></h2>
+                                    <h2 data-animation="fadeInUp" data-delay="100ms">RELIABILITY  <br>SINCE <span>DECADES </span></h2>
                                     <h5 data-animation="fadeInUp" data-delay="400ms">We love to create "cool" things on Digital Platforms</h5>
                                     <a href="#" class="btn uza-btn btn-2" data-animation="fadeInUp" data-delay="700ms">Start Exploring</a>
                                 </div>
@@ -78,7 +78,7 @@
                             <!-- Welcome Text -->
                             <div class="col-12 col-md-6">
                                 <div class="welcome-text">
-                                    <h2 data-animation="fadeInUp" data-delay="100ms">Uza makes your <br> biz <span>greater</span></h2>
+                                    <h2 data-animation="fadeInUp" data-delay="100ms">INNOVATION  <br> FOR A <span>BETTER FUTURE </span></h2>
                                     <h5 data-animation="fadeInUp" data-delay="400ms">We love to create "cool" things on Digital Platforms</h5>
                                     <a href="#" class="btn uza-btn btn-2" data-animation="fadeInUp" data-delay="700ms">Start Exploring</a>
                                 </div>
@@ -117,10 +117,9 @@
                 <!-- About Us Content -->
                 <div class="col-12 col-md-6">
                     <div class="about-us-content mb-80">
-                        <h2>We're a Agency Team &amp; Digital Marketing</h2>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing esed diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
-                        <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet gubergren no sea takimata sanctus est Lorem ipsum dolor sit amet ipsumlor eut consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt labore et dolore magna
-                            liquyam erat.</p>
+                        <h2>We're a MGI  Group &amp; Team </h2>
+                        <p>Manakamana Group of Industries takes a holistic approach towards sustainability, optimizing the use of available resources such as raw materials, utilities, human resources, etc. </p>
+                        <p>MGI Group constantly works towards minimizing its environmental footprint through this approach.</p>
                         <a href="#" class="btn uza-btn btn-2 mt-4">Start Exploring</a>
                     </div>
                 </div>
@@ -141,7 +140,7 @@
                 <!-- Section Heading -->
                 <div class="col-12">
                     <div class="section-heading text-center">
-                        <h2>Our Services</h2>
+                        <h2>Our Business Groups</h2>
                     </div>
                 </div>
             </div>
@@ -149,41 +148,129 @@
             <div class="row">
 
                 <!-- Single Service Area -->
-                <div class="col-12 col-lg-4">
+                <div class="bns-grp col-12 col-lg-4">
+                    <a href="{{url('front/company-details')}}">
                     <div class="single-service-area mb-80">
                         <!-- Service Icon -->
                         <div class="service-icon">
                             <i class="icon_cone_alt"></i>
                         </div>
-                        <h5>Business Strategy</h5>
+                        <h5>Manamakama Eta Udyog</h5>
                         <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet gubergren no sea takimata.</p>
                     </div>
+                    </a>
                 </div>
 
                 <!-- Single Service Area -->
-                <div class="col-12 col-lg-4">
+                <div class="bns-grp col-12 col-lg-4">
+                    <a href="#">
                     <div class="single-service-area mb-80">
                         <!-- Service Icon -->
                         <div class="service-icon">
                             <i class="icon_piechart"></i>
                         </div>
-                        <h5>Market Analytics</h5>
+                        <h5>New Mankamana Eta Udyog</h5>
                         <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet gubergren no sea takimata.</p>
                     </div>
+                    </a>
                 </div>
 
                 <!-- Single Service Area -->
-                <div class="col-12 col-lg-4">
+                <div class="bns-grp col-12 col-lg-4">
+                    <a href="#">
                     <div class="single-service-area mb-80">
                         <!-- Service Icon -->
                         <div class="service-icon">
                             <i class="icon_easel"></i>
                         </div>
-                        <h5>Marketing Social</h5>
+                        <h5>New Manakamana Miller</h5>
                         <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet gubergren no sea takimata.</p>
                     </div>
+                    </a>
                 </div>
 
+                <!-- Single Service Area -->
+                <div class="bns-grp col-12 col-lg-4">
+                    <a href="#">
+                    <div class="single-service-area mb-80">
+                        <!-- Service Icon -->
+                        <div class="service-icon">
+                            <i class="icon_table"></i>
+                        </div>
+                        <h5>Roadyz Automart Pvt. Ltd.</h5>
+                        <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet gubergren no sea takimata.</p>
+                    </div>
+                    </a>
+                </div>
+                <!-- Single Service Area -->
+                <div class="bns-grp col-12 col-lg-4">
+                    <a href="#">
+                    <div class="single-service-area mb-80">
+                        <!-- Service Icon -->
+                        <div class="service-icon">
+                            <i class="icon_lightbulb_alt"></i>
+                        </div>
+                        <h5>Manamakama Eta Udyog</h5>
+                        <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet gubergren no sea takimata.</p>
+                    </div>
+                    </a>
+                </div>
+
+                <!-- Single Service Area -->
+                <div class="bns-grp col-12 col-lg-4">
+                    <a href="#">
+                    <div class="single-service-area mb-80">
+                        <!-- Service Icon -->
+                        <div class="service-icon">
+                            <i class="icon_tools"></i>
+                        </div>
+                        <h5>New Mankamana Eta Udyog</h5>
+                        <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet gubergren no sea takimata.</p>
+                    </div>
+                    </a>
+                </div>
+
+                <!-- Single Service Area -->
+                <div class="bns-grp col-12 col-lg-4">
+                    <a href="#">
+                    <div class="single-service-area mb-80">
+                        <!-- Service Icon -->
+                        <div class="service-icon">
+                            <i class="icon_star"></i>
+                        </div>
+                        <h5>New Manakamana Miller</h5>
+                        <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet gubergren no sea takimata.</p>
+                    </div>
+                    </a>
+                </div>
+
+                <!-- Single Service Area -->
+                <div class="bns-grp col-12 col-lg-4">
+                    <a href="#">
+                    <div class="single-service-area mb-80">
+                        <!-- Service Icon -->
+                        <div class="service-icon">
+                            <i class="icon_paperclip"></i>
+                        </div>
+                        <h5>Roadyz Automart Pvt. Ltd.</h5>
+                        <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet gubergren no sea takimata.</p>
+                    </div>
+                    </a>
+                </div>
+
+                  <!-- Single Service Area -->
+                <div class="bns-grp col-12 col-lg-4">
+                    <a href="#">
+                    <div class="single-service-area mb-80">
+                        <!-- Service Icon -->
+                        <div class="service-icon">
+                            <i class="icon_piechart"></i>
+                        </div>
+                        <h5>New Mankamana Eta Udyog</h5>
+                        <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet gubergren no sea takimata.</p>
+                    </div>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -312,7 +399,7 @@
                                 </div>
                                 <!-- Testimonial Content -->
                                 <div class="testimonial-content">
-                                    <h4>“Colorlib Ltd’s ranking has gone up so much from the great work that your team has done and our brand get organic sales consistently from your efforts. We are happy that the results of your efforts were lasting and profitable.”</h4>
+                                    <h4>“Manakamana Group of Industries takes a holistic approach towards sustainability, optimizing the use of available resources such as raw materials, utilities, human resources, etc.MGI Group constantly works towards minimizing its environmental footprint through this approach.”</h4>
                                     <!-- Ratings -->
                                     <div class="ratings">
                                         <i class="icon_star"></i>
@@ -323,7 +410,7 @@
                                     </div>
                                     <!-- Author Info -->
                                     <div class="author-info">
-                                        <h5>Darrell Goodman <span>- CEO colorlib</span></h5>
+                                        <h5>Darrell Goodman <span>- CEO </span></h5>
                                     </div>
                                     <!-- Quote Icon -->
                                     <div class="quote-icon"><img src="{{asset('images/frontend_images/core-img/quote.png')}}" alt=""></div>
@@ -338,7 +425,7 @@
                                 </div>
                                 <!-- Testimonial Content -->
                                 <div class="testimonial-content">
-                                    <h4>“Colorlib Ltd’s ranking has gone up so much from the great work that your team has done and our brand get organic sales consistently from your efforts. We are happy that the results of your efforts were lasting and profitable.”</h4>
+                                    <h4>“Manakamana Group of Industries takes a holistic approach towards sustainability, optimizing the use of available resources such as raw materials, utilities, human resources, etc.MGI Group constantly works towards minimizing its environmental footprint through this approach.”</h4>
                                     <!-- Ratings -->
                                     <div class="ratings">
                                         <i class="icon_star"></i>
@@ -349,7 +436,7 @@
                                     </div>
                                     <!-- Author Info -->
                                     <div class="author-info">
-                                        <h5>Darrell Goodman <span>- CEO colorlib</span></h5>
+                                        <h5>Darrell Goodman <span>- CEO</span></h5>
                                     </div>
                                     <!-- Quote Icon -->
                                     <div class="quote-icon"><img src="{{asset('images/frontend_images/core-img/quote.png')}}" alt=""></div>
@@ -364,7 +451,7 @@
                                 </div>
                                 <!-- Testimonial Content -->
                                 <div class="testimonial-content">
-                                    <h4>“Colorlib Ltd’s ranking has gone up so much from the great work that your team has done and our brand get organic sales consistently from your efforts. We are happy that the results of your efforts were lasting and profitable.”</h4>
+                                    <h4>“Manakamana Group of Industries takes a holistic approach towards sustainability, optimizing the use of available resources such as raw materials, utilities, human resources, etc.MGI Group constantly works towards minimizing its environmental footprint through this approach.”</h4>
                                     <!-- Ratings -->
                                     <div class="ratings">
                                         <i class="icon_star"></i>
@@ -375,7 +462,7 @@
                                     </div>
                                     <!-- Author Info -->
                                     <div class="author-info">
-                                        <h5>Darrell Goodman <span>- CEO colorlib</span></h5>
+                                        <h5>Darrell Goodman <span>- CEO </span></h5>
                                     </div>
                                     <!-- Quote Icon -->
                                     <div class="quote-icon"><img src="{{asset('images/frontend_images/core-img/quote.png')}}" alt=""></div>
@@ -422,7 +509,7 @@
                     <div class="col-12 col-lg-4">
                         <div class="cta-content mb-80">
                             <div class="call-now-btn">
-                                <a href="#"><span>Call us now:</span> (+65) 1234 5678</a>
+                                <a href="#"><span>Call us now:</span> (+977) 9876543210</a>
                             </div>
                         </div>
                     </div>
@@ -488,31 +575,6 @@
     </section>
     <!-- ***** Blog Area End ***** -->
 
-    <!-- ***** Newsletter Area Start ***** -->
-    <section class="uza-newsletter-area">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <!-- Newsletter Content -->
-                <div class="col-12 col-md-6 col-lg-6">
-                    <div class="nl-content mb-80">
-                        <h2>Subscribe to our Newsletter</h2>
-                        <p>Subscribe our newsletter gor get notification about new updates, etc...</p>
-                    </div>
-                </div>
-                <!-- Newsletter Form -->
-                <div class="col-12 col-md-6 col-lg-5">
-                    <div class="nl-form mb-80">
-                        <form action="#" method="post">
-                            <input type="email" name="nl-email" value="" placeholder="Your Email">
-                            <button type="submit">Subscribe</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <!-- Border Bottom -->
-            <div class="border-line"></div>
-        </div>
-    </section>
-    <!-- ***** Newsletter Area End ***** -->
+   
 
 @endsection
