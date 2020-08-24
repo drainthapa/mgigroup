@@ -36,3 +36,11 @@ Route::get('/front/news',function(){
 Route::get('/front/single-news',function(){
 	return view('front.single-news');
 });
+
+Route::get('/front/milestone',function(){
+	return view('front.milestone');
+});
+
+Route::get('/front/awards',function(){
+	return view('front.awards');
+});

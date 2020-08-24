@@ -58,13 +58,13 @@
                                         <li><a href="{{url('/front/about-us')}}">- About MGI</a></li>
                                         <li><a href="#">- Leadership</a></li>
                                         <li><a href="#">- Promoters</a></li>
-                                        <li><a href="#">- Milestones</a></li>
-                                        <li><a href="#">- Awards</a></li>
+                                        <li><a href="{{url('/front/milestone')}}">- Milestones</a></li>
+                                        <li><a href="{{url('front/awards')}}">- Awards</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="#">SBUs</a>
                                     <ul class="dropdown">
-                                        <li><a href="#">- New Manakamana Eta</a></li>
+                                        <li><a href="{{url('front/company-details')}}">- New Manakamana Eta</a></li>
                                         <li><a href="#">- New Manakamana Miller</a></li>
                                         <li><a href="#">- Manakamana Eta Udyog</a></li>
                                         <li><a href="#">- Manakamana Eta Udyog</a></li>
@@ -87,7 +87,7 @@
 
                             <!-- Login / Register -->
                             <div class="login-register-btn mx-3">
-                                <a href="#">Login <span>/ Register</span></a>
+                                <i class="icon_profile"></i><span><a href="{{url('/admin')}}"> Login</span></a>
                             </div>
 
                             <!-- Search Icon -->
