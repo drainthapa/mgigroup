@@ -13,9 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('front.front');
-});
+Route::get('/','FrontPageController@index')->name('front-page');
 
 Route::get('/front/about-us',function(){
 	return view('front.about-us');

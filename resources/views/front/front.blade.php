@@ -3,6 +3,7 @@
   <!-- ***** Welcome Area Start ***** -->
     <section class="welcome-area">
         <div class="welcome-slides owl-carousel">
+            @foreach ( $sliders as $slider)
 
             <!-- Single Welcome Slide -->
             <div class="single-welcome-slide">
@@ -18,9 +19,9 @@
                             <!-- Welcome Text -->
                             <div class="col-12 col-md-6">
                                 <div class="welcome-text">
-                                    <h2 data-animation="fadeInUp" data-delay="100ms">MGI Group makes your <br> life <span>greater</span></h2>
-                                    <h5 data-animation="fadeInUp" data-delay="400ms">We love to create "cool" things on Digital Platforms</h5>
-                                    <a href="#" class="btn uza-btn btn-2" data-animation="fadeInUp" data-delay="700ms">Start Exploring</a>
+                                    <h2 data-animation="fadeInUp" data-delay="100ms">{{ $slider->title }}</h2>
+                                    <h5 data-animation="fadeInUp" data-delay="400ms">{{ $slider->subtitle }}</h5>
+                                    <a href="#" class="btn uza-btn btn-2" data-animation="fadeInUp" data-delay="700ms">{{ $slider->btntext }}</a>
                                 </div>
                             </div>
                             <!-- Welcome Thumbnail -->
@@ -34,66 +35,7 @@
                 </div>
             </div>
 
-            <!-- Single Welcome Slide -->
-            <div class="single-welcome-slide">
-                <!-- Background Curve -->
-                <div class="background-curve">
-                    <img src="{{asset('images/frontend_images/core-img/curve-1.png')}}" alt="">
-                </div>
-
-                <!-- Welcome Content -->
-                <div class="welcome-content h-100">
-                    <div class="container h-100">
-                        <div class="row h-100 align-items-center">
-                            <!-- Welcome Text -->
-                            <div class="col-12 col-md-6">
-                                <div class="welcome-text">
-                                    <h2 data-animation="fadeInUp" data-delay="100ms">RELIABILITY  <br>SINCE <span>DECADES </span></h2>
-                                    <h5 data-animation="fadeInUp" data-delay="400ms">We love to create "cool" things on Digital Platforms</h5>
-                                    <a href="#" class="btn uza-btn btn-2" data-animation="fadeInUp" data-delay="700ms">Start Exploring</a>
-                                </div>
-                            </div>
-                            <!-- Welcome Thumbnail -->
-                            <div class="col-12 col-md-6">
-                                <div class="welcome-thumbnail">
-                                    <img src="{{asset('images/frontend_images/bg-img/1.png')}}" alt="" data-animation="slideInRight" data-delay="400ms">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Single Welcome Slide -->
-            <div class="single-welcome-slide">
-                <!-- Background Curve -->
-                <div class="background-curve">
-                    <img src="{{asset('images/frontend_images/core-img/curve-1.png')}}" alt="">
-                </div>
-
-                <!-- Welcome Content -->
-                <div class="welcome-content h-100">
-                    <div class="container h-100">
-                        <div class="row h-100 align-items-center">
-                            <!-- Welcome Text -->
-                            <div class="col-12 col-md-6">
-                                <div class="welcome-text">
-                                    <h2 data-animation="fadeInUp" data-delay="100ms">INNOVATION  <br> FOR A <span>BETTER FUTURE </span></h2>
-                                    <h5 data-animation="fadeInUp" data-delay="400ms">We love to create "cool" things on Digital Platforms</h5>
-                                    <a href="#" class="btn uza-btn btn-2" data-animation="fadeInUp" data-delay="700ms">Start Exploring</a>
-                                </div>
-                            </div>
-                            <!-- Welcome Thumbnail -->
-                            <div class="col-12 col-md-6">
-                                <div class="welcome-thumbnail">
-                                    <img src="{{asset('images/frontend_images/bg-img/1.png')}}" alt="" data-animation="slideInRight" data-delay="400ms">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+             @endforeach
         </div>
     </section>
     <!-- ***** Welcome Area End ***** -->
@@ -102,7 +44,7 @@
     <section class="uza-about-us-area">
         <div class="container">
             <div class="row align-items-center">
-
+                @foreach( $introductions as $introduction)
                 <!-- About Thumbnail -->
                 <div class="col-12 col-md-6">
                     <div class="about-us-thumbnail mb-80">
@@ -117,12 +59,12 @@
                 <!-- About Us Content -->
                 <div class="col-12 col-md-6">
                     <div class="about-us-content mb-80">
-                        <h2>We're a MGI  Group &amp; Team </h2>
-                        <p>Manakamana Group of Industries takes a holistic approach towards sustainability, optimizing the use of available resources such as raw materials, utilities, human resources, etc. </p>
-                        <p>MGI Group constantly works towards minimizing its environmental footprint through this approach.</p>
-                        <a href="#" class="btn uza-btn btn-2 mt-4">Start Exploring</a>
+                        <h2>{{ $introduction->title }}</h2>
+                        <p>{{ $introduction->description }} </p>
+                        <a href="#" class="btn uza-btn btn-2 mt-4">{{ $introduction->btntext }}</a>
                     </div>
                 </div>
+                @endforeach
             </div>
         </div>
 
@@ -146,131 +88,21 @@
             </div>
 
             <div class="row">
-
+                @foreach( $companygroups as $companygroup)
                 <!-- Single Service Area -->
                 <div class="bns-grp col-12 col-lg-4">
                     <a href="{{url('front/company-details')}}">
                     <div class="single-service-area mb-80">
                         <!-- Service Icon -->
                         <div class="service-icon">
-                            <i class="icon_cone_alt"></i>
+                            <i class="{{ $companygroup->icon }}"></i>
                         </div>
-                        <h5>Manamakama Eta Udyog</h5>
-                        <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet gubergren no sea takimata.</p>
+                        <h5>{{ $companygroup->name }}</h5>
+                        <p>{{ $companygroup->description }}</p>
                     </div>
                     </a>
                 </div>
-
-                <!-- Single Service Area -->
-                <div class="bns-grp col-12 col-lg-4">
-                    <a href="#">
-                    <div class="single-service-area mb-80">
-                        <!-- Service Icon -->
-                        <div class="service-icon">
-                            <i class="icon_piechart"></i>
-                        </div>
-                        <h5>New Mankamana Eta Udyog</h5>
-                        <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet gubergren no sea takimata.</p>
-                    </div>
-                    </a>
-                </div>
-
-                <!-- Single Service Area -->
-                <div class="bns-grp col-12 col-lg-4">
-                    <a href="#">
-                    <div class="single-service-area mb-80">
-                        <!-- Service Icon -->
-                        <div class="service-icon">
-                            <i class="icon_easel"></i>
-                        </div>
-                        <h5>New Manakamana Miller</h5>
-                        <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet gubergren no sea takimata.</p>
-                    </div>
-                    </a>
-                </div>
-
-                <!-- Single Service Area -->
-                <div class="bns-grp col-12 col-lg-4">
-                    <a href="#">
-                    <div class="single-service-area mb-80">
-                        <!-- Service Icon -->
-                        <div class="service-icon">
-                            <i class="icon_table"></i>
-                        </div>
-                        <h5>Roadyz Automart Pvt. Ltd.</h5>
-                        <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet gubergren no sea takimata.</p>
-                    </div>
-                    </a>
-                </div>
-                <!-- Single Service Area -->
-                <div class="bns-grp col-12 col-lg-4">
-                    <a href="#">
-                    <div class="single-service-area mb-80">
-                        <!-- Service Icon -->
-                        <div class="service-icon">
-                            <i class="icon_lightbulb_alt"></i>
-                        </div>
-                        <h5>Manamakama Eta Udyog</h5>
-                        <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet gubergren no sea takimata.</p>
-                    </div>
-                    </a>
-                </div>
-
-                <!-- Single Service Area -->
-                <div class="bns-grp col-12 col-lg-4">
-                    <a href="#">
-                    <div class="single-service-area mb-80">
-                        <!-- Service Icon -->
-                        <div class="service-icon">
-                            <i class="icon_tools"></i>
-                        </div>
-                        <h5>New Mankamana Eta Udyog</h5>
-                        <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet gubergren no sea takimata.</p>
-                    </div>
-                    </a>
-                </div>
-
-                <!-- Single Service Area -->
-                <div class="bns-grp col-12 col-lg-4">
-                    <a href="#">
-                    <div class="single-service-area mb-80">
-                        <!-- Service Icon -->
-                        <div class="service-icon">
-                            <i class="icon_star"></i>
-                        </div>
-                        <h5>New Manakamana Miller</h5>
-                        <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet gubergren no sea takimata.</p>
-                    </div>
-                    </a>
-                </div>
-
-                <!-- Single Service Area -->
-                <div class="bns-grp col-12 col-lg-4">
-                    <a href="#">
-                    <div class="single-service-area mb-80">
-                        <!-- Service Icon -->
-                        <div class="service-icon">
-                            <i class="icon_paperclip"></i>
-                        </div>
-                        <h5>Roadyz Automart Pvt. Ltd.</h5>
-                        <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet gubergren no sea takimata.</p>
-                    </div>
-                    </a>
-                </div>
-
-                  <!-- Single Service Area -->
-                <div class="bns-grp col-12 col-lg-4">
-                    <a href="#">
-                    <div class="single-service-area mb-80">
-                        <!-- Service Icon -->
-                        <div class="service-icon">
-                            <i class="icon_piechart"></i>
-                        </div>
-                        <h5>New Mankamana Eta Udyog</h5>
-                        <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet gubergren no sea takimata.</p>
-                    </div>
-                    </a>
-                </div>
+                @endforeach
             </div>
         </div>
     </section>
