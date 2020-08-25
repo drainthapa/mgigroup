@@ -82,7 +82,7 @@
                 <!-- Section Heading -->
                 <div class="col-12">
                     <div class="section-heading text-center">
-                        <h2>Our Business Groups</h2>
+                        <h2>Our Business Investments</h2>
                     </div>
                 </div>
             </div>
@@ -91,14 +91,14 @@
                 @foreach( $companygroups as $companygroup)
                 <!-- Single Service Area -->
                 <div class="bns-grp col-12 col-lg-4">
-                    <a href="{{url('front/company-details')}}">
+                    <a href="{{route('company.show',$companygroup->slug)}}">
                     <div class="single-service-area mb-80">
                         <!-- Service Icon -->
                         <div class="service-icon">
                             <i class="{{ $companygroup->icon }}"></i>
                         </div>
                         <h5>{{ $companygroup->name }}</h5>
-                        <p>{{ $companygroup->description }}</p>
+                        <p>{{ $companygroup->shortdescription }}</p>
                     </div>
                     </a>
                 </div>
@@ -108,247 +108,69 @@
     </section>
     <!-- ***** Services Area End ***** -->
 
-    <!-- ***** Portfolio Area Start ***** -->
-    <section class="uza-portfolio-area section-padding-80">
-        <div class="container">
-            <div class="row">
-                <!-- Section Heading -->
-                <div class="col-12">
-                    <div class="section-heading text-center">
-                        <h2>Our Portfolio</h2>
-                        <p>We stay on top of our industry by being experts in yours.</p>
+    <!-- ***** Cool Facts Area Start ***** -->
+<section class="uza-cf-area section-padding-80-0">
+    <div class="container">
+        <div class="row">
+
+            <!-- Single Cool Facts Area -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="single-cf-area d-flex align-items-center mb-80">
+                    <h2><span class="counter">1000</span></h2>
+                    <div class="cf-text">
+                        <h5>More than <br> 10K Employees</h5>
                     </div>
+                    {{-- <div class="bg-icon"><i class="icon_heart_alt"></i></div> --}}
                 </div>
             </div>
-        </div>
 
-        <div class="container-fluid">
-            <div class="row">
-                <!-- Portfolio Slides -->
-                <div class="portfolio-sildes owl-carousel">
 
-                    <!-- Single Portfolio Slide -->
-                    <div class="single-portfolio-slide">
-                        <img src="{{asset('images/frontend_images/bg-img/3.jpg')}}" alt="">
-                        <!-- Overlay Effect -->
-                        <div class="overlay-effect">
-                            <h4>Digital Marketing</h4>
-                            <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet gubergren no sea takimata sanctus est</p>
-                        </div>
-                        <!-- View More -->
-                        <div class="view-more-btn">
-                            <a href="#"><i class="arrow_right"></i></a>
-                        </div>
+            <!-- Single Cool Facts Area -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="single-cf-area d-flex align-items-center mb-80">
+                    <h2><span class="counter">20</span></h2>
+                    <div class="cf-text">
+                        <h5>Companies in <br>strategic and <br> vital sectors</h5>
                     </div>
-
-                    <!-- Single Portfolio Slide -->
-                    <div class="single-portfolio-slide">
-                        <img src="{{asset('images/frontend_images/bg-img/4.jpg')}}" alt="">
-                        <!-- Overlay Effect -->
-                        <div class="overlay-effect">
-                            <h4>Digital Marketing</h4>
-                            <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet gubergren no sea takimata sanctus est</p>
-                        </div>
-                        <!-- View More -->
-                        <div class="view-more-btn">
-                            <a href="#"><i class="arrow_right"></i></a>
-                        </div>
-                    </div>
-
-                    <!-- Single Portfolio Slide -->
-                    <div class="single-portfolio-slide">
-                        <img src="{{asset('images/frontend_images/bg-img/5.jpg')}}" alt="">
-                        <!-- Overlay Effect -->
-                        <div class="overlay-effect">
-                            <h4>Digital Marketing</h4>
-                            <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet gubergren no sea takimata sanctus est</p>
-                        </div>
-                        <!-- View More -->
-                        <div class="view-more-btn">
-                            <a href="#"><i class="arrow_right"></i></a>
-                        </div>
-                    </div>
-
-                    <!-- Single Portfolio Slide -->
-                    <div class="single-portfolio-slide">
-                        <img src="{{asset('images/frontend_images/bg-img/6.jpg')}}" alt="">
-                        <!-- Overlay Effect -->
-                        <div class="overlay-effect">
-                            <h4>Digital Marketing</h4>
-                            <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet gubergren no sea takimata sanctus est</p>
-                        </div>
-                        <!-- View More -->
-                        <div class="view-more-btn">
-                            <a href="#"><i class="arrow_right"></i></a>
-                        </div>
-                    </div>
-
-                    <!-- Single Portfolio Slide -->
-                    <div class="single-portfolio-slide">
-                        <img src="{{asset('images/frontend_images/bg-img/5.jpg')}}" alt="">
-                        <!-- Overlay Effect -->
-                        <div class="overlay-effect">
-                            <h4>Digital Marketing</h4>
-                            <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet gubergren no sea takimata sanctus est</p>
-                        </div>
-                        <!-- View More -->
-                        <div class="view-more-btn">
-                            <a href="#"><i class="arrow_right"></i></a>
-                        </div>
-                    </div>
-
-                    <!-- Single Portfolio Slide -->
-                    <div class="single-portfolio-slide">
-                        <img src="{{asset('images/frontend_images/bg-img/6.jpg')}}" alt="">
-                        <!-- Overlay Effect -->
-                        <div class="overlay-effect">
-                            <h4>Digital Marketing</h4>
-                            <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet gubergren no sea takimata sanctus est</p>
-                        </div>
-                        <!-- View More -->
-                        <div class="view-more-btn">
-                            <a href="#"><i class="arrow_right"></i></a>
-                        </div>
-                    </div>
-
+                    {{-- <div class="bg-icon"><i class="icon_piechart"></i></div> --}}
                 </div>
             </div>
-        </div>
 
-        <!-- Client Feedback Area Start -->
-        <div class="clients-feedback-area mt-80 section-padding-80 clearfix">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <!-- Testimonial Slides -->
-                        <div class="testimonial-slides owl-carousel">
-
-                            <!-- Single Testimonial Slide -->
-                            <div class="single-testimonial-slide d-flex align-items-center">
-                                <!-- Testimonial Thumbnail -->
-                                <div class="testimonial-thumbnail">
-                                    <img src="{{asset('images/frontend_images/bg-img/7.jpg')}}" alt="">
-                                </div>
-                                <!-- Testimonial Content -->
-                                <div class="testimonial-content">
-                                    <h4>“Manakamana Group of Industries takes a holistic approach towards sustainability, optimizing the use of available resources such as raw materials, utilities, human resources, etc.MGI Group constantly works towards minimizing its environmental footprint through this approach.”</h4>
-                                    <!-- Ratings -->
-                                    <div class="ratings">
-                                        <i class="icon_star"></i>
-                                        <i class="icon_star"></i>
-                                        <i class="icon_star"></i>
-                                        <i class="icon_star"></i>
-                                        <i class="icon_star"></i>
-                                    </div>
-                                    <!-- Author Info -->
-                                    <div class="author-info">
-                                        <h5>Darrell Goodman <span>- CEO </span></h5>
-                                    </div>
-                                    <!-- Quote Icon -->
-                                    <div class="quote-icon"><img src="{{asset('images/frontend_images/core-img/quote.png')}}" alt=""></div>
-                                </div>
-                            </div>
-
-                            <!-- Single Testimonial Slide -->
-                            <div class="single-testimonial-slide d-flex align-items-center">
-                                <!-- Testimonial Thumbnail -->
-                                <div class="testimonial-thumbnail">
-                                    <img src="{{asset('images/frontend_images/bg-img/23.jpg')}}" alt="">
-                                </div>
-                                <!-- Testimonial Content -->
-                                <div class="testimonial-content">
-                                    <h4>“Manakamana Group of Industries takes a holistic approach towards sustainability, optimizing the use of available resources such as raw materials, utilities, human resources, etc.MGI Group constantly works towards minimizing its environmental footprint through this approach.”</h4>
-                                    <!-- Ratings -->
-                                    <div class="ratings">
-                                        <i class="icon_star"></i>
-                                        <i class="icon_star"></i>
-                                        <i class="icon_star"></i>
-                                        <i class="icon_star"></i>
-                                        <i class="icon_star"></i>
-                                    </div>
-                                    <!-- Author Info -->
-                                    <div class="author-info">
-                                        <h5>Darrell Goodman <span>- CEO</span></h5>
-                                    </div>
-                                    <!-- Quote Icon -->
-                                    <div class="quote-icon"><img src="{{asset('images/frontend_images/core-img/quote.png')}}" alt=""></div>
-                                </div>
-                            </div>
-
-                            <!-- Single Testimonial Slide -->
-                            <div class="single-testimonial-slide d-flex align-items-center">
-                                <!-- Testimonial Thumbnail -->
-                                <div class="testimonial-thumbnail">
-                                    <img src="{{asset('images/frontend_images/bg-img/24.jpg')}}" alt="">
-                                </div>
-                                <!-- Testimonial Content -->
-                                <div class="testimonial-content">
-                                    <h4>“Manakamana Group of Industries takes a holistic approach towards sustainability, optimizing the use of available resources such as raw materials, utilities, human resources, etc.MGI Group constantly works towards minimizing its environmental footprint through this approach.”</h4>
-                                    <!-- Ratings -->
-                                    <div class="ratings">
-                                        <i class="icon_star"></i>
-                                        <i class="icon_star"></i>
-                                        <i class="icon_star"></i>
-                                        <i class="icon_star"></i>
-                                        <i class="icon_star"></i>
-                                    </div>
-                                    <!-- Author Info -->
-                                    <div class="author-info">
-                                        <h5>Darrell Goodman <span>- CEO </span></h5>
-                                    </div>
-                                    <!-- Quote Icon -->
-                                    <div class="quote-icon"><img src="{{asset('images/frontend_images/core-img/quote.png')}}" alt=""></div>
-                                </div>
-                            </div>
-
-                        </div>
+            
+            <!-- Single Cool Facts Area -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="single-cf-area d-flex align-items-center mb-80">
+                    <h2><span class="counter">50</span></h2>
+                    <div class="cf-text">
+                        <h5>BEST GROUP<br>awards</h5>
                     </div>
+                   {{--  <div class="bg-icon"><i class="icon_book_alt"></i></div> --}}
                 </div>
             </div>
-        </div>
-        <!-- Client Feedback Area End -->
 
-        <!-- Border -->
-        <div class="container">
-            <div class="border-line"></div>
-        </div>
+            <!-- Single Cool Facts Area -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="single-cf-area d-flex align-items-center mb-80">
+                    <h2><span class="counter">500</span></h2>
+                    <div class="cf-text">
+                        <h5>BILLION<br>Capital investment</h5>
+                    </div>
+                   {{--  <div class="bg-icon"><i class="icon_profile"></i></div> --}}
+                </div>
+            </div>
 
-        <!-- Background Curve -->
-        <div class="portfolio-bg-curve">
-            <img src="{{asset('images/frontend_images/core-img/curve-3.png')}}" alt="">
         </div>
-    </section>
-    <!-- ***** Portfolio Area End ***** -->
+    </div>
+</section>
+<!-- ***** Cool Facts Area End ***** -->
 
-    <!-- ***** Blog Area Start ***** -->
+  <!-- ***** Blog Area Start ***** -->
     <section class="uza-blog-area">
         <!-- Background Curve -->
         <div class="blog-bg-curve">
             <img src="{{asset('images/frontend_images/core-img/curve-4.png')}}" alt="">
         </div>
 
-        <!-- CTA Area Start -->
-        <div class="uza-cta-area section-padding-0-80">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-12 col-lg-8">
-                        <div class="cta-content mb-80">
-                            <h2>Interested in working with us?</h2>
-                            <h6>Hit the button below or give us a call!</h6>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-lg-4">
-                        <div class="cta-content mb-80">
-                            <div class="call-now-btn">
-                                <a href="#"><span>Call us now:</span> (+977) 9876543210</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- CTA Area End -->
 
         <div class="container">
             <div class="row">
@@ -362,46 +184,22 @@
             </div>
 
             <div class="row">
+                @foreach($blogs as $blog)
 
                 <!-- Single Blog Post -->
                 <div class="col-12 col-lg-4">
                     <div class="single-blog-post bg-img mb-80" style="background-image: url(/images/frontend_images/bg-img/8.jpg);">
                         <!-- Post Content -->
                         <div class="post-content">
-                            <span class="post-date"><span>23</span> August, 2018</span>
-                            <a href="#" class="post-title">SEO: The Movie By Ignite Visibility</a>
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing esed diam nonumy eirmod tempor invidunt ut</p>
-                            <a href="#" class="read-more-btn">Read More <i class="arrow_carrot-2right"></i></a>
+                             <span class="post-date">{{  $blog->postdate }}</span>
+                            <a href="{{route('blog.showblog',$blog->slug)}}" class="post-title">{{  $blog->title }}</a>
+                            <p>{{ Str::limit($blog->description, 100) }}</p>
+                            <a href="{{route('blog.showblog',$blog->slug)}}" class="read-more-btn">Read More <i class="arrow_carrot-2right"></i></a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Single Blog Post -->
-                <div class="col-12 col-lg-4">
-                    <div class="single-blog-post bg-img mb-80" style="background-image: url(/images/frontend_images/bg-img/9.jpg);">
-                        <!-- Post Content -->
-                        <div class="post-content">
-                            <span class="post-date"><span>13</span> December, 2018</span>
-                            <a href="#" class="post-title">What Curling Irons Are The Best Ones</a>
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing esed diam nonumy eirmod tempor invidunt ut</p>
-                            <a href="#" class="read-more-btn">Read More <i class="arrow_carrot-2right"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Blog Post -->
-                <div class="col-12 col-lg-4">
-                    <div class="single-blog-post bg-img mb-80" style="background-image: url(/images/frontend_images/bg-img/10.jpg);">
-                        <!-- Post Content -->
-                        <div class="post-content">
-                            <span class="post-date"><span>08</span> July, 2018</span>
-                            <a href="#" class="post-title">Amazon REV Workshop: Road to Seattle</a>
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing esed diam nonumy eirmod tempor invidunt ut</p>
-                            <a href="#" class="read-more-btn">Read More <i class="arrow_carrot-2right"></i></a>
-                        </div>
-                    </div>
-                </div>
-
+                @endforeach
             </div>
         </div>
     </section>

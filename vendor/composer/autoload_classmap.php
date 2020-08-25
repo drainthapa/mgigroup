@@ -6,9 +6,12 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'App\\Blog' => $baseDir . '/app/Blog.php',
     'App\\CompanyGroup' => $baseDir . '/app/CompanyGroup.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
+    'App\\Footer' => $baseDir . '/app/Footer.php',
+    'App\\Http\\Controllers\\BlogController' => $baseDir . '/app/Http/Controllers/BlogController.php',
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
     'App\\Http\\Controllers\\FrontPageController' => $baseDir . '/app/Http/Controllers/FrontPageController.php',
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',
@@ -32,6 +35,7 @@ return array(
     'Asm89\\Stack\\Cors' => $vendorDir . '/asm89/stack-cors/src/Cors.php',
     'Asm89\\Stack\\CorsService' => $vendorDir . '/asm89/stack-cors/src/CorsService.php',
     'AssertionError' => $vendorDir . '/symfony/polyfill-php70/Resources/stubs/AssertionError.php',
+    'BlogsTableSeeder' => $baseDir . '/database/seeds/BlogsTableSeeder.php',
     'Brick\\Math\\BigDecimal' => $vendorDir . '/brick/math/src/BigDecimal.php',
     'Brick\\Math\\BigInteger' => $vendorDir . '/brick/math/src/BigInteger.php',
     'Brick\\Math\\BigNumber' => $vendorDir . '/brick/math/src/BigNumber.php',
@@ -881,6 +885,7 @@ return array(
     'Faker\\ValidGenerator' => $vendorDir . '/fzaninotto/faker/src/Faker/ValidGenerator.php',
     'Fideloper\\Proxy\\TrustProxies' => $vendorDir . '/fideloper/proxy/src/TrustProxies.php',
     'Fideloper\\Proxy\\TrustedProxyServiceProvider' => $vendorDir . '/fideloper/proxy/src/TrustedProxyServiceProvider.php',
+    'FootersTableSeeder' => $baseDir . '/database/seeds/FootersTableSeeder.php',
     'Fruitcake\\Cors\\CorsServiceProvider' => $vendorDir . '/fruitcake/laravel-cors/src/CorsServiceProvider.php',
     'Fruitcake\\Cors\\HandleCors' => $vendorDir . '/fruitcake/laravel-cors/src/HandleCors.php',
     'GuzzleHttp\\Client' => $vendorDir . '/guzzlehttp/guzzle/src/Client.php',
