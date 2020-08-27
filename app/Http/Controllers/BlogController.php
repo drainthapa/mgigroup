@@ -15,7 +15,7 @@ class BlogController extends Controller
     public function index()
     {
         $blogs = Blog::take(9)->get();
-        return view('front.news')->with('blogs',$blogs);
+        return view('front/pages/newsblog.news')->with('blogs',$blogs);
     }
       
   /**
@@ -27,7 +27,7 @@ class BlogController extends Controller
     public function showblog($slug)
     {
         $blog= Blog::where('slug',$slug)->firstOrFail();
-        return view('front.single-news')->with('blog',$blog);
+        return view('front/pages/newsblog.single-news')->with('blog',$blog);
     }
 
 }

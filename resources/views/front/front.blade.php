@@ -204,7 +204,4 @@
         </div>
     </section>
     <!-- ***** Blog Area End ***** -->
-
-   
-
 @endsection

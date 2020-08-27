@@ -22,7 +22,7 @@ class FrontPageController extends Controller
         $introductions = Introduction::get();
         $companygroups = CompanyGroup::get();
         $blogs = Blog::take(3)->get();
-        $footers = Footer::get()->first();
+        $footers = Footer::get();
         return view('front.front')->with([
             'sliders' => $sliders,
             'introductions' => $introductions,
@@ -41,7 +41,7 @@ class FrontPageController extends Controller
     public function show($slug)
     {
         $companygroup = CompanyGroup::where('slug', $slug)->firstOrFail();
-        return view('front.pages.company-details')->with('companygroup',$companygroup);
+        return view('front/pages/companygroup.company-details')->with('companygroup',$companygroup);
     }
 
 

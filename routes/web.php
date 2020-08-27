@@ -14,14 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/front/about-us',function(){
-	return view('front.about-us');
-});
-
 Route::get('/front/contact',function(){
 	return view('front.contact');
 });
-
 
 Route::get('/front/milestone',function(){
 	return view('front.milestone');
@@ -33,7 +28,14 @@ Route::get('/front/awards',function(){
 
 Route::get('/','FrontPageController@index')->name('front-page');
 
-Route::get('/front/pages/{company}','FrontPageController@show')->name('company.show');
-Route::get('/front/news','BlogController@index')->name('news-page');
-Route::get('/front/{blog}','BlogController@showblog')->name('blog.showblog');
+Route::get('/front/about-us','AboutUsPageController@index')->name('about-us-page');
+
+Route::match(['get','post'],'/front/pages/companygroup/{company}','FrontPageController@show')->name('company.show');
+
+Route::get('/front/pages/newsblog/news','BlogController@index')->name('news-page');
+Route::match(['get','post'],'//front/pages/newsblog/{blog}','BlogController@showblog')->name('blog.showblog');
+
+Route::get('/front/pages/certificate/certification','CertificatePageController@index')->name('certification-page');
+Route::match(['get','post'],'/front/pages/certificate/{certificate}','CertificatePageController@show')->name('certificate.show');
+
 

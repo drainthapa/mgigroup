@@ -55,27 +55,32 @@
                                 <li class="current-item"><a href="{{url('/')}}">HOME</a></li>
                                 <li><a href="#">MGI</a>
                                     <ul class="dropdown">
-                                        <li><a href="{{url('/front/about-us')}}">- About MGI</a></li>
-                                        <li><a href="#">- Leadership</a></li>
-                                        <li><a href="#">- Promoters</a></li>
-                                        <li><a href="{{url('/front/milestone')}}">- Milestones</a></li>
-                                        <li><a href="{{url('front/awards')}}">- Awards</a></li>
+                                        <li><a href="{{url('/front/pages/aboutus/about-us')}}">About MGI</a></li>
+                                        <li><a href="#">Leadership</a></li>
+                                        <li><a href="#">Promoters</a></li>
+                                        <li><a href="{{url('/front/milestone')}}">Milestones</a></li>
+                                        <li><a href="{{url('front/awards')}}">Awards</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="#">SBUs</a>
                                     <ul class="dropdown">
-                                        <li><a href="{{url('front/company-details')}}">- New Manakamana Eta</a></li>
-                                        <li><a href="#">- New Manakamana Miller</a></li>
-                                        <li><a href="#">- Manakamana Eta Udyog</a></li>
-                                        <li><a href="#">- Manakamana Eta Udyog</a></li>
-                                        <li><a href="#">- Manakamana Eta Udyog</a></li>
-                                        <li><a href="#">- Manakamana Eta Udyog</a></li>
-                                        <li><a href="#">- Manakamana Eta Udyog</a></li>
-                                        <li><a href="#">- Roadyz Automart Pvt. Ltd.</a></li>
+                                        <li><a href="{{url('front/company-details')}}">New Manakamana Eta</a></li>
+                                        <li><a href="#">New Manakamana Miller</a></li>
+                                        <li><a href="#">Manakamana Eta Udyog</a></li>
+                                        <li><a href="#">Manakamana Eta Udyog</a></li>
+                                        <li><a href="#">Manakamana Eta Udyog</a></li>
+                                        <li><a href="#">Manakamana Eta Udyog</a></li>
+                                        <li><a href="#">Manakamana Eta Udyog</a></li>
+                                        <li><a href="#">Roadyz Automart Pvt. Ltd.</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#">APPROVALS</a></li>
-                                <li><a href="{{url('front/news')}}">NEWS</a></li>
+                                <li><a href="#">APPROVALS</a>
+                                <ul class="dropdown">
+                                        <li><a href="{{url('front/pages/certificate/certification')}}">CERTIFICATIONS</a></li>
+                                        <li><a href="{{url('front/client')}}">CLIENTELE</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="{{url('front/pages/newsblog/news')}}">NEWS</a></li>
                                 <li><a href="#">CAREERS</a></li>
                                 <li><a href="{{url('front/contact')}}">CONTACT</a></li>
                             </ul>
