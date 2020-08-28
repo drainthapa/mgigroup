@@ -81,7 +81,7 @@
                                     </ul>
                                 </li>
                                 <li><a href="{{url('front/pages/newsblog/news')}}">NEWS</a></li>
-                                <li><a href="#">CAREERS</a></li>
+                                <li><a href="{{url('front/pages/career/careers')}}">CAREERS</a></li>
                                 <li><a href="{{url('front/contact')}}">CONTACT</a></li>
                             </ul>
 

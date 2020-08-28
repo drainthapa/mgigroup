@@ -26,9 +26,10 @@ Route::get('/front/awards',function(){
 	return view('front.awards');
 });
 
+
 Route::get('/','FrontPageController@index')->name('front-page');
 
-Route::get('/front/about-us','AboutUsPageController@index')->name('about-us-page');
+Route::get('/front/pages/aboutus/about-us','AboutUsPageController@index')->name('about-us-page');
 
 Route::match(['get','post'],'/front/pages/companygroup/{company}','FrontPageController@show')->name('company.show');
 
@@ -38,4 +39,5 @@ Route::match(['get','post'],'//front/pages/newsblog/{blog}','BlogController@show
 Route::get('/front/pages/certificate/certification','CertificatePageController@index')->name('certification-page');
 Route::match(['get','post'],'/front/pages/certificate/{certificate}','CertificatePageController@show')->name('certificate.show');
 
-
+Route::get('/front/pages/career/careers','CareerController@index')->name('career-page');
+Route::match(['get','post'],'/front/pages/career/{career}','CareerController@show')->name('career.show');
