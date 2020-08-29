@@ -82,12 +82,11 @@
                                 </li>
                                 <li><a href="{{url('front/pages/newsblog/news')}}">NEWS</a></li>
                                 <li><a href="{{url('front/pages/career/careers')}}">CAREERS</a></li>
-                                <li><a href="{{url('front/contact')}}">CONTACT</a></li>
                             </ul>
 
                             <!-- Get A Quote -->
                             <div class="get-a-quote ml-4 mr-3">
-                                <a href="#" class="btn uza-btn">Get an appointment</a>
+                                <a href="{{url('front/contact')}}" class="btn uza-btn">CONTACT US</a>
                             </div>
 
                             <!-- Login / Register -->

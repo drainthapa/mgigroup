@@ -28,11 +28,11 @@
                         <!-- Nav -->
                         <nav>
                             <ul class="our-link">
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Contact Us</a></li>
-                                <li><a href="#">Forum Registeration</a></li>
-                                <li><a href="#">Forum Sign In</a></li>
+                                <li><a href="{{url('/front/pages/aboutus/about-us')}}">About Us</a></li>
+                                <li><a href="{{url('front/pages/newsblog/news')}}">News/Blog</a></li>
+                                <li><a href="{{url('/front/milestone')}}">Milestone</a></li>
+                                <li><a href="{{url('front/awards')}}">Awards</a></li>
+                                <li><a href="{{url('front/contact')}}">Contact Us</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -47,11 +47,11 @@
                         <!-- Nav -->
                         <nav>
                             <ul class="our-link">
-                                <li><a href="#">Customer Support</a></li>
-                                <li><a href="#">Privacy</a></li>
-                                <li><a href="#">Media &amp; Press</a></li>
+                                <li><a href="{{url('front/pages/certificate/certification')}}">Certifications</a></li>
+                                <li><a href="{{url('front/privacypolicy')}}">Privacy Policy</a></li>
+                                <li><a href="{{url('front/client')}}">Clientele</a></li>
                                 <li><a href="#">Our Team</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Disclaimer</a></li>
                             </ul>
                         </nav>
                     </div>

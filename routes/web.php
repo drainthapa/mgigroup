@@ -13,17 +13,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
-Route::get('/front/contact',function(){
-	return view('front.contact');
-});
-
 Route::get('/front/milestone',function(){
 	return view('front.milestone');
 });
 
 Route::get('/front/awards',function(){
 	return view('front.awards');
+});
+
+Route::get('/front/contact',function(){
+	return view('front.contact');
+});
+
+Route::get('/front/privacypolicy',function(){
+	return view('front.privacypolicy');
 });
 
 

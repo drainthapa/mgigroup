@@ -34,7 +34,7 @@
                 <div class="col-12 col-lg-8">
                     <div class="uza-contact-form mb-80">
                         <div class="contact-heading mb-50">
-                            <h4>Thank you for your interest. <br>Please fill out the form below to inquire about our work in Digital.</h4>
+                            <h4>Thank you for your interest. <br>Please fill out the form below to inquire about our work.</h4>
                         </div>
                         <form action="#" method="post">
                             <div class="row">
@@ -77,9 +77,10 @@
                         <!-- Single Sidebar Area -->
                         <div class="single-contact-card mb-50">
                             <h4>Contact Us</h4>
-                            <h3>(+977)<br> 98570-29406</h3>
-                            <h6>info@mgigroup.com.np</h6>
-                            <h6>Sun - Fri: 9:00 - 6:00 <br>Closed on Weekends</h6>
+                            <h3>(+977)<br> {{ $footers->contact }}</h3>
+                            <h6>{{ $footers->address }}</h6>
+                            <h6>{{ $footers->email }}</h6>
+                            <h6>{{ $footers->openinghours }}<br>{{ $footers->weekendhours }}</h6>
                         </div>
 
                         <!-- Single Sidebar Area -->
